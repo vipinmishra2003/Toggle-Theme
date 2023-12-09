@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --color-hue:218;
+    --color-primary: hsl(var(--color-hue),49%,43%);
+    --color-primary-light: hsl(var(--color-hue),49%,650%);
+    --body-color: hsl(var(--color-hue),49%,96%);
+    --color-text: hsl(var(--color-hue),20%,20%);
+
+}
+.dark-mode{
+    --color-primary: hsl(var(--color-hue),49%,43%);
+    --color-primary-light: hsl(var(--color-hue),49%,0%);
+    --body-color: hsl(var(--color-hue),30%,10%);
+    --color-text: hsl(var(--color-hue),49%,90%);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--body-color);
+}
+h1 {
+    color: var(--color-primary);
+}
+p {
+    color:var(--color-text);
+}
+.tbn {
+    border: none;
+    outline: none;
+    font-size: inherit;
+    padding: 1rem 1.5rem;
+    background-color: hsl(218, 91%, 47%); ;
+    color: #a52e2e;
+    cursor: pointer;
+    transition: 0.3s background;
+}
+.tbn:hover {
+  background-color: var(--color-primary-light);
+}
